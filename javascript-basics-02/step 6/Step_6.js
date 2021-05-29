@@ -18,8 +18,17 @@ function changeImage (image, source) {
     changeImage(imgTwo, "images/image3_2.jpg");
     changeImage(imgThree, "images/image4_2.jpg");
     changeImage(imgFour, "images/image5_2.jpg");
+
+function returnImage(image, originalSource){
+    image.onmouseout = function (){
+        image.src = originalSource;
+    }
+}
+
+
+    returnImage(img, "images/image1.jpg");
+    returnImage(imgOne, "images/image2.jpg");
+    returnImage(imgTwo, "images/image3.jpg");
+    returnImage(imgThree, "images/image4.jpg");
+    returnImage(imgFour, "images/image5.jpg");
    
-
-
-
-
